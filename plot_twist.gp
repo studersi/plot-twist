@@ -13,6 +13,10 @@
 plotTitle="DaTitle"
 xAxisLabel="x-axis"
 yAxisLabel="y-axis"
+xmin="0"
+xmax="2000"
+ymin="0"
+ymax="2000"
 
 dataFile="data.dat"
 dataTitle="dataTitle"
@@ -28,6 +32,8 @@ set output outputFile
 set title plotTitle
 set xlabel xAxisLabel
 set ylabel yAxisLabel
+set xrange [xmin:xmax]
+set yrange [ymin:ymax]
 set logscale xy
 set key left top
 
